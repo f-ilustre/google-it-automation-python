@@ -1,0 +1,5 @@
+# the cron_file only worked when health_check.py was edited
+# receiver = "{}@example.com".format(os.environ["USER"]) 
+# --> receiver = "[user-name]@example.com"  #replace [user-name] with the one provided by the lab
+
+1 * * * * . $HOME/.profile; python3 /home/{user-name}/health_check.py
